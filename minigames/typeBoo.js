@@ -204,7 +204,7 @@ export class TypeBoo extends Phaser.Scene {
         }
     }
 
-    update() {
+    update(time, delta) {
         if (this.isGameOver){
             return;
         }
