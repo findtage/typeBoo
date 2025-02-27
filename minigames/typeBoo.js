@@ -33,7 +33,7 @@ export class TypeBoo extends Phaser.Scene {
         this.load.image('lifeFlash_typeBoo', 'assets/lifeFlash_TypeBoo.png');
 
         this.load.audio('rightLetter_typeBoo', 'assets/right_letter.mp3');
-        this.load.audio('wrongLetter_typeBoo', 'assetswrong_letter.mp3');
+        this.load.audio('wrongLetter_typeBoo', 'assets/wrong_letter.mp3');
         this.load.audio('wordMissed_typeBoo', 'assets/word_missed.mp3');
         this.load.audio('ghost1_destroyed_typeBoo', 'assets/ghost1_destroyed.mp3');
         this.load.audio('ghost2_destroyed_typeBoo', 'assets/ghost2_destroyed.mp3');
