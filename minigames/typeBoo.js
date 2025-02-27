@@ -212,7 +212,8 @@ export class TypeBoo extends Phaser.Scene {
             return;
         }
         this.ghosts.forEach(ghost => {
-            ghost.sprite.setScale(ghost.sprite.scale + ghost.scaleSpeed);
+            let scaleAdjustment = ghost.scaleSpeed * (delta / 16.67); // Normalize for 60 FPS
+            ghost.sprite.setScale(ghost.sprite.scale + scaleAdjustment);
     
             if (ghost.sprite.scale >= 1) {
                 this.loseLife();
